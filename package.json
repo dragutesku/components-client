@@ -1,0 +1,34 @@
+{
+  "name": "rest-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --config ./config/env/webpack.dev.js",
+    "build-prod": "webpack --config ./config/env/webpack.prod.js",
+    "dev-server": "nodemon ./server/index.js",
+    "prod-server": "node ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^10.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.2"
+  }
+}
