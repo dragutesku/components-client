@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit-element';
 
 // Pages
-import './client/pages/homepage.js';
+import './client/Pages/Homepage.js';
 
 // Default UI
 import "./css/minimal-ui.css";
@@ -12,7 +12,7 @@ class App extends LitElement {
   render() {
     return html `
         <div class="wrapper">
-        <page-homepage></page-homepage>
+          <page-homepage></page-homepage>
         </div>
     `;
   };

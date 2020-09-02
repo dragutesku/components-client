@@ -1,13 +1,13 @@
-import { LitElement, html, customElement } from 'lit-element';
+import { LitElement, html } from 'lit-element';
 
 // Page Components
-import { Header } from '../components/header/header.js';
+import '../components/Header/Header.js';
 
 class Homepage extends LitElement {
 
   render() {
     return html `
-        ${Header()}
+        <header-component></header-component>
     `;
   };
 

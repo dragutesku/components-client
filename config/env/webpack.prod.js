@@ -3,7 +3,7 @@ const common = require("../webpack.common");
 const { merge } = require("webpack-merge");
 const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const { JSBASEPATH } = require('../build.config.js');
+const { JSBASEPATH, DIST_PATH } = require('../build.config');
 
 
 module.exports = merge(common, {
@@ -11,8 +11,8 @@ module.exports = merge(common, {
   mode: 'production',
   // OUTPUT
   output: {
-    filename: `${JSBASEPATH}[name].[contentHash].js`, //cache buster
-    path: path.resolve(__dirname, "dist"),
+    filename: `${JSBASEPATH}[name].[contentHash].js`, // cache buster
+    path: path.join(DIST_PATH, "dist"),
   },
 
   optimization: {

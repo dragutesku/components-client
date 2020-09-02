@@ -1,8 +1,7 @@
-const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CSSPATH } = require('./build.config.js');
+const { CSSPATH } = require('./build.config');
 
 // NOTE: Can run webpack-dev-server so i dont need node
 
@@ -27,7 +26,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: `${CSSPATH }[name].[contentHash].css`
+      filename: `${CSSPATH}[name].[contentHash].css`
     }),
   ],
   /** 
